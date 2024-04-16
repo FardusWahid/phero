@@ -87,7 +87,7 @@ md:px-5 md:text-[17px]"  href="/login">Login<IoLogInOutline size={23} color="bla
 </section>
 
 <div className="flex justify-center w-full">
-  <button className="py-3 flex justify-center text-black font-sans font-bold text-[14px] lg:text-[20px] items-center" onClick={copyToClipboard}>I'm ready to proceed payment of 299&nbsp;<FaCopy size={20} color="black" /></button>
+  <button className="py-3 flex justify-center text-black font-sans font-bold text-[14px] lg:text-[20px] items-center" onClick={copyToClipboard}>I am ready to proceed payment of 299&nbsp;<FaCopy size={20} color="black" /></button>
   </div>
 
 <p className="text-shadow text-center text-[12px] text-blue-950 font-sans italic ">copy & send it to inbox now</p>
