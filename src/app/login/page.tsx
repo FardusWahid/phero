@@ -37,8 +37,8 @@ export default function LoginPage() {
 
             toast((t) => (
                 <span>
-                  <i>purchase this only for 499&nbsp;</i>
-                  <a className="rounded-xl bg-zinc-100 shadow-md shadow-yellow-200 ring-1 ring-gray-500 px-1 py-1" href="https://www.facebook.com/free.courses.vercel/" target="_blank"> buy &nbsp; </a>
+                  <i>buy this course for 299 only&nbsp;</i>
+                  <a className="font-semibold font-mono tracking-tighter nav2 px-3 py-1" href="https://www.facebook.com/free.courses.vercel/" target="_blank"> buy &nbsp; </a>
                 </span>
               ), {duration:15000 } );
 
