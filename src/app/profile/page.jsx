@@ -5,10 +5,19 @@ import React, {useState} from "react";
 import {toast} from "react-hot-toast";
 import {useRouter} from "next/navigation";
 import Sub from "./Sub"
+import Navbar from "@/components/nav"
+import { BiLogOut } from "react-icons/bi";
+import { Toaster } from 'react-hot-toast';
+
+
+
 
 
 
 export default function ProfilePage() {
+    const today = new Date();
+    const dayOfWeek = today.toLocaleString('en-US', { weekday: 'long' });
+
     const router = useRouter()
     const [data, setData] = useState("nothing")
     const logout = async () => {
@@ -25,52 +34,429 @@ export default function ProfilePage() {
 
     
 
-return (    
-        <>
-
+return ( <div>
+    
+        <div >
+<Navbar/>
          
-        <h1 className="text-4xl font-bold mt-5 mx-5">ACS<span className="text-sm font-normal italic tracking-tighter">Engineering</span></h1>
-<br />
-        <section className="flex justify-end gap-5 mx-6 ">
-            <a className="text-gray-900 bg-gradient-to-r from-red-200 via-yellow-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 px-2 py-1 h-8 rounded-xl " href="">medical</a>
-            <a  className="text-gray-900 bg-gradient-to-r from-red-200 via-blue-pink-300 to-blue-300 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 px-2 py-1 h-8 rounded-xl"  href="">Varsity</a>
+<br /><br /><br /><br className="max-sm:hidden" />
+        <section className="flex justify-end  mx-3 md:mx-7 ">
             <button
             onClick={logout}
-            className=" text-sm italic bg-gray-900 rounded-lg p-1 text-yellow-300 shadow-inner shadow-zinc-300"
-            >Logout</button>
+            className="flex font-semibold font-mono tracking-tighter nav2 px-3 py-1"
+            >logout<BiLogOut color="black" size={22} />
+            </button>
         </section>
+        <p className="text-sm mx-3 font-extrabold italic font-mono">{dayOfWeek}</p>
 <br />
 
-           
-<section className="w-full lg:grid grid-cols-3">
+    <h1 className="text-2xl text-center md:text-3xl font-sans font-extrabold italic tracking-wider mb-4 mt-2 md:mb-5">PROGRAMMING - HERO</h1>      
+<section className="flex flex-wrap justify-center gap-1 w-full">
 
 <Sub 
 
-subject="Physics"
-image="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2018_22/2451826/180601-atomi-mn-1540.jpg"
+module="01"
+road="/m1"
+
+/>
+
+
+<Sub 
+
+module="02"
 road="/physics"
-alt="physics"
+
+/>
+
+<Sub 
+
+module="03"
+road="/physics"
+
 />
 
 
-<Sub
-subject="Mathematics"
-image="https://w0.peakpx.com/wallpaper/131/996/HD-wallpaper-calculus-love-math-mathematics-quote-saying-sign.jpg"
-road="/math"
-alt=""
+
+<Sub 
+
+module="04"
+road="/physics"
+
 />
 
-<Sub
-subject="Chemistry"
-image="https://static.vecteezy.com/system/resources/thumbnails/022/807/944/small_2x/chemical-flasks-with-colored-liquids-on-a-black-background-generative-ai-photo.jpg"
-road="/chemistry"
-alt="chemistry"
+
+<Sub 
+
+module="05"
+road="/physics"
+
 />
+
+
+
+<Sub 
+
+module="06"
+road="/physics"
+
+/>
+
+
+
+<Sub 
+
+module="07"
+road="/physics"
+
+/>
+
+
+<Sub 
+
+module="08"
+road="/physics"
+
+/>
+
+
+<Sub 
+
+module="09"
+road="/physics"
+
+/>
+
+
+<Sub 
+
+module="10"
+road="/physics"
+
+/>
+
+
+<Sub 
+
+module="11"
+road="/physics"
+
+/>
+
+<Sub 
+
+module="12"
+road="/physics"
+
+/>
+<Sub 
+
+module="13"
+road="/physics"
+
+/>
+<Sub 
+
+module="14"
+road="/physics"
+
+/>
+
+<Sub 
+
+module="15"
+road="/physics"
+
+/>
+
+
+<Sub 
+
+module="16"
+road="/physics"
+
+/>
+
+
+<Sub 
+
+module="17"
+road="/physics"
+
+/>
+<Sub 
+
+module="18"
+road=""
+
+/>
+<Sub 
+
+module="19"
+road=""
+
+/>
+<Sub 
+
+module="20"
+road=""
+
+/>
+<Sub 
+
+module="21"
+road=""
+
+/>
+<Sub 
+
+module="22"
+road=""
+
+/>
+<Sub 
+
+module="23"
+road=""
+
+/>
+<Sub 
+
+module="24"
+road=""
+
+/>
+<Sub 
+
+module="25"
+road=""
+
+/>
+<Sub 
+
+module="26"
+road=""
+
+/>
+<Sub 
+
+module="27"
+road=""
+
+/>
+<Sub 
+
+module="28"
+road=""
+
+/>
+<Sub 
+
+module="29"
+road=""
+
+/>
+<Sub 
+
+module="30"
+road=""
+
+/>
+<Sub 
+
+module="31"
+road=""
+
+/>
+<Sub 
+
+module="32"
+road=""
+
+/>
+
+<Sub 
+
+module="33"
+road=""
+
+/>
+<Sub 
+
+module="34"
+road=""
+
+/>
+<Sub 
+
+module="35"
+road=""
+
+/>
+<Sub 
+
+module="36"
+road=""
+
+/>
+<Sub 
+
+module="37"
+road=""
+
+/>
+<Sub 
+
+module="38"
+road=""
+
+/>
+<Sub 
+
+module="39"
+road=""
+
+/>
+<Sub 
+
+module="40"
+road=""
+
+/>
+<Sub 
+
+module="41"
+road=""
+
+/><Sub 
+
+module="42"
+road=""
+
+/>
+<Sub 
+
+module="43"
+road=""
+
+/>
+<Sub 
+
+module="44"
+road=""
+
+/>
+<Sub 
+
+module="45"
+road=""
+
+/>
+<Sub 
+
+module="46"
+road=""
+
+/>
+<Sub 
+
+module="47"
+road=""
+
+/>
+<Sub 
+
+module="48"
+road=""
+
+/>
+<Sub 
+
+module="49"
+road=""
+
+/>
+<Sub 
+
+module="50"
+road=""
+
+/>
+<Sub 
+
+module="51"
+road=""
+
+/>
+<Sub 
+
+module="52"
+road=""
+
+/>
+<Sub 
+
+module="53"
+road=""
+
+/><Sub 
+
+module="54"
+road=""
+
+/>
+<Sub 
+
+module="55"
+road=""
+
+/>
+<Sub 
+
+module="56"
+road=""
+
+/>
+<Sub 
+
+module="57"
+road=""
+
+/>
+<Sub 
+
+module="58"
+road=""
+
+/>
+<Sub 
+
+module="59"
+road=""
+
+/>
+<Sub 
+
+module="60"
+road=""
+
+/>
+<Toaster
+  position="top-center"
+  reverseOrder={false}
+/>
+
    
 </section>
 
 
-            </>    
+            </div>   
+            
+            <div>
 
+             
+            </div>
+            
+            
+            </div>  
 )
 }

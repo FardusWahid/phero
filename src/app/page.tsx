@@ -24,19 +24,19 @@ export default function Home() {
 
 
   const images = [
-    { url: "3.png" },
-    { url: "images/2.jpg" },
-    { url: "images/3.jpg" },
-    { url: "images/4.jpg" },
-    { url: "images/5.jpg" },
-    { url: "images/6.jpg" },
-    { url: "images/7.jpg" },
+    { url: "/pay1.png" },
+    { url: "/login1.png" },
+    
+    { url: "/profile1.png" },
+    { url: "/demo11.png" },
+    { url: "/demo22.png" },
+    { url: "/demo2.png" },
   ];
   
 
   
     const copyToClipboard = () => {
-      navigator.clipboard.writeText("I wish to proceed payment of 499 for Acs Engineering 2024")
+      navigator.clipboard.writeText("I wish to proceed payment of 299 for programming hero webdevelopment course")
         .then(() => toast.success('Text copied to clipboard'))
         .catch(err => console.error('Error copying text: ', err));
     };
@@ -57,14 +57,14 @@ md:px-5 md:text-[17px]"  href="/login">Login<IoLogInOutline size={23} color="bla
 
 
 <div>
-  <h1 className="text-3xl font-extrabold text-center pt-3 lg:pt-0 ">ACS Engineering 2024</h1>
+  <h1 className="text-3xl font-extrabold text-center pt-3 lg:pt-0 ">Programming Hero Web Development</h1>
 </div>
  
 
 
 
 
-<section className="lg:flex lg:flex-row-reverse lg:m-10 lg:justify-between">
+<section className="flex flex-wrap lg:flex-row-reverse lg:m-10 lg:justify-between">
 
 
 
@@ -77,17 +77,17 @@ md:px-5 md:text-[17px]"  href="/login">Login<IoLogInOutline size={23} color="bla
 
 
 
-<div className=" flex justify-center mt-5 lg:mt-0">
+<div className="flex justify-center mt-5 lg:mt-0">
   <main className=" checkout w-11/12 justify-center lg:w-[550px]">
 
 <section className="p-2 w-full ">
-  <img src="/space.jpeg" alt="billing"
+  <img src="/optweb.jpg" alt="billing"
    className="rounded-md "/>
 
 </section>
 
 <div className="flex justify-center w-full">
-  <button className="py-3 flex justify-center text-black font-sans font-bold text-[14px] lg:text-[20px] items-center" onClick={copyToClipboard}>I'm ready to proceed payment of 499&nbsp;<FaCopy size={20} color="black" /></button>
+  <button className="py-3 flex justify-center text-black font-sans font-bold text-[14px] lg:text-[20px] items-center" onClick={copyToClipboard}>I'm ready to proceed payment of 299&nbsp;<FaCopy size={20} color="black" /></button>
   </div>
 
 <p className="text-shadow text-center text-[12px] text-blue-950 font-sans italic ">copy & send it to inbox now</p>
@@ -121,20 +121,21 @@ md:px-5 md:text-[17px]"  href="/login">Login<IoLogInOutline size={23} color="bla
 
 </section>
 <br /> <br /><br />
-<h1 className="font-extrabold text-xl mx-10 md:mx-56">Demo</h1><br />
+<h1 className="font-extrabold text-xl mx-3 md:mx-56">Demo <span className="font-semibold text-sm">[mobile view]</span></h1>
 <div className="flex justify-center">
 
 <MediaQuery maxWidth={768}>
       {(matches) => (
         <SimpleImageSlider
-          width={matches ? 380 : 1000} 
-          height={matches ? 400 : 600} 
-          images={images}
-          showBullets={true}
-          showNavs={true}
-          loop={true}
-          autoPlay={true}
-        />
+        
+  width={matches ? 340 : 360} 
+  height={matches ? 600 : 800} 
+  images={images}
+  showBullets={true}
+  showNavs={true}
+  loop={true}
+  autoPlay={true}
+/>
       )}
     </MediaQuery>
     </div>

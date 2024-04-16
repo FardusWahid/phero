@@ -11,7 +11,7 @@ export default function Navbar({ fixed }) {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
               className="text-2xl md:text-4xl  font-extrabold tracking-wide leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-black font-sans"
-              href="/"
+              href="https://applecourses.netlify.app"
             >
               Apple<span className="tracking-normal text-[9px] italic">courses</span>
             </a>
@@ -37,7 +37,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:font-extrabold hover:text-blue-900 hover:text-shadow"
-                  href="/freecourses"
+                  href="https://applecourses.netlify.app/freecourses"
                 >
                 <span className="ml-2 tracking-wider">free</span>
                 </a>

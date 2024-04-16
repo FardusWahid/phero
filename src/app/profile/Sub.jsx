@@ -3,14 +3,14 @@ import Link from "next/link"
 export default function Sub(props){
     return(
 
-        <div className="flex justify-center h-full">
+        <div>
 
-<section className="w-4/5 p-1 ring-1 mt-5 rounded-[20px] shadow-lg shadow-blue-950 text-center h-1/3 lg:w-3/4 lg:h-fit ">
-        <h1 className="mt-2  font-bold text-2xl text-shadow">{props.subject}</h1>
-        <Link href={props.road}>
-        <img src={props.image}
-         alt={props.alt} 
-         className="rounded-lg  p-3 w-full h-[180px]"/></Link> 
+<section className="ring-1 ring-yellow-400 rounded-md text-center m-2 hover:opacity-70 hover:ring-opacity-100 hover:ring-2 hover:ring-blue-900">
+<Link href={props.road}><p className=" text-blue-950 px-2 py-2  font-extrabold text-[16px] md:text-[18px] ts tsw font-sans tracking-wide ">Module {props.module}</p>
+        
+       
+         
+        </Link> 
      
         </section>
    
