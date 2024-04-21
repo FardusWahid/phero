@@ -11,7 +11,7 @@ export default function Navbar({ fixed }) {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
               className="text-2xl md:text-4xl  font-extrabold tracking-wide leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-black font-sans"
-              href="https://applecourses.netlify.app"
+              href="/profile"
             >
               Apple<span className="tracking-normal text-[9px] italic">courses</span>
             </a>
