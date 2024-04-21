@@ -52,7 +52,7 @@ function App() {
     <div>
      <Navbar/>
      <br /><br /><br /><br className="max-sm:hidden" />
-     <p  className="left-5 w-[40px] mx-5 mt-1" ><a href="/profile"><FaHome color="black" size={20} /></a></p><h1 className='text-center font-bold font-sans text-lg text-blue-950 italic mt-1'>Module 1 </h1><br />
+     <p  className="left-5 w-[40px] mx-5 mt-1" ><a href="/profile"><FaHome color="black" size={20} /></a></p><h1 className='text-center font-bold font-sans text-lg text-blue-950 italic mt-1'>Introduction </h1><br />
       
 
       {loading && <p className=" flex justify-center items-center text-black">Loading...</p>}
